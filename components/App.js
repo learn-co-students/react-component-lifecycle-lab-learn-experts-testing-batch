@@ -12,6 +12,7 @@ class App extends React.Component {
       latestTweets: []
     };
     initialize();
+    //what is initialize?
     this.updateChart = this.updateChart.bind(this);
     this.fetchTweets = this.fetchTweets.bind(this);
   }
@@ -31,7 +32,7 @@ class App extends React.Component {
   componentDidUpdate() {
     this.updateChart(this.state.latestTweets.length);
   }
-  
+
   updateChart(numTweets) {
     update(numTweets);
   }

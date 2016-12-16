@@ -32,7 +32,7 @@ class App extends React.Component {
   }
   // TODO: componentDidUpdate()
   componentDidUpdate(prevProps, prevState){
-    this.updateChart(this.state.latestTweets.length - prevState.latestTweets.length)
+    this.updateChart(this.state.latestTweets.length)
   }
 
   updateChart(numTweets) {

@@ -40,7 +40,7 @@ doing this in a bit of a roundabout way.
 ### Streaming tweets
 If you've completed the last section, you should now see some tweets in the browser when you load
 the app. Great! However, we'd like out tweet wall to update every few seconds and display us more tweets.
-In order to do that, we have to set up an intercal to call our fake API every few seconds. Open up `<App />`
+In order to do that, we have to set up an interval to call our fake API every few seconds. Open up `<App />`
 again and observe that `startInterval()` and `cleanUpInterval()` already exist. They're just not used.
 Use the `componentDidMount()` and `componentWillUnmount()` lifecycle hooks to start the interval when
 the component is mounted and to clean it up when the component is unmounted.
